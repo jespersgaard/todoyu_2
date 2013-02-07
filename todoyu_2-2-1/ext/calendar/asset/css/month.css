@@ -1,0 +1,172 @@
+/* ---------------
+	Event
+   --------------- */
+.monthMode .event.typeBirthday .head {
+	background-color:#D7DCC6;
+}
+
+.monthMode .event.dayevent {
+	overflow:hidden;
+	white-space:nowrap;
+}
+
+#calendar-body .monthMode .event {
+	position:relative;
+	margin-bottom:1px;
+}
+
+/* ------------
+	Header
+   ------------ */
+.mv-daynames-table {
+	position:relative;
+	table-layout:fixed;
+	border-collapse:separate;
+	top:0;
+	left:0;
+	width:100%;
+	background:#d7dcc6;
+}
+
+.mv-dayname {
+	padding:0 2px 0 6px;
+	font-weight:normal;
+	line-height:16px;
+	color:#000;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+
+
+/* --------------
+	Month view
+   -------------- */
+	/* border color and style */
+.mv-daynames-table th,
+.standardGrid td {
+	border:solid #d7dcc6;
+}
+	.mv-event-container {
+		position:relative;
+		top:0;
+		left:0;
+	}
+
+.month-row{
+	position:relative;
+	left:0;
+	width:100%;
+	min-height:120px;
+	overflow:hidden;
+}
+
+.standardGrid {
+	border-collapse:separate;
+	border-spacing:1px;
+}
+
+	.standardGrid td {
+		border-color:#d7dcc6;
+		border-style:solid;
+		border-width:1px 1px 0 0;
+	}
+
+	.standardGrid td.first {
+		border-left-width:1px;
+	}
+
+	.standardGrid .last td {
+		border-bottom-width:1px;
+	}
+
+	.standardGrid td.title {
+		height:20px;
+		line-height:16px;
+		padding:2px;
+		text-align:right;
+		color:#444;
+		background-color:#f2f3ed;
+		cursor:pointer;
+	}
+
+	.standardGrid td.title:hover{
+		background-color:#d7dcc6;
+	}
+
+	.standardGrid td.title.inSelMonthTitle {
+		background-color:#e4eace;
+	}
+
+	.standardGrid td.title.inSelMonthTitle:hover {
+		background-color:#d7dcc6;
+	}
+
+		.standardGrid td.ttoday {
+			background-color:#f6f6c8 !important;
+			font-weight:bold;
+			color:#0a246a;
+		}
+
+	.standardGrid td.content {
+		height:100px;
+		background-color:#fff;
+		border:1px solid #fff;
+	}
+	.standardGrid td.content:hover {
+		border:1px solid #bababa;
+		cursor:pointer;
+	}
+
+	td.inSelMonth:hover {
+		border:1px solid #204a87 !important;
+		cursor:pointer;
+	}
+
+	.standardGrid td.ctoday {
+		height:100px;
+		background-color:#ffffbb;
+	}
+
+
+.st-dtitle{
+	overflow:hidden;
+}
+
+
+#mvEventContainer table td.content.dndHover {
+	background-color:#fffdbd;
+}
+
+
+
+/* --------------
+	Event
+   -------------- */
+.event.month {
+	padding:1px;
+	margin-bottom:1px;
+	overflow:hidden;
+	white-space:nowrap;
+	height:18px;
+}
+
+.st-bgtoday {
+	background-color:#ffffcc;
+	border-right:1px solid #d7dcc6;
+	border-left:1px solid #d7dcc6;
+}
+
+div.quickinfoHoliday_content span.holiday {
+	text-transform:uppercase;
+}
+
+#mvEventContainer {
+	border-left:1px solid #ddd;
+	border-right:1px solid #ddd;
+}
+
+th.mv-dayname.odd{
+	background-color:#edf3d9 !important;
+	border-color:#edf3d9;
+}

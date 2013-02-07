@@ -1,0 +1,27 @@
+#calendarBody {
+	position:static;
+	overflow:visible;
+	height:auto;
+}
+
+#calendar-quicknav {
+	display:none;
+}
+
+div.weekMode table .standardGrid td.noEventCell {
+	border:1px solid #ddd;
+}
+.tg-timedevents {
+	position:static;
+	height:auto;
+}
+.event {
+	padding:2px;
+}
+.event dl {
+	border:1px solid;
+}
+.event .head .headInner {
+	font-weight:bold;
+	padding-left:2px;
+}

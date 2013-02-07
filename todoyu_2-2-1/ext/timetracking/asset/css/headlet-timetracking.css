@@ -1,0 +1,152 @@
+#todoyutimetrackingheadlettracking a.button {
+	background:url(../img/icons.png) no-repeat 1px -235px;
+}
+
+#todoyutimetrackingheadlettracking .content {
+	margin-left:-380px;
+	width:575px;
+	padding:2px;
+	padding-top:3px;
+}
+
+
+/* ----------------------------------------------
+	Active tracking
+   ---------------------------------------------- */
+#todoyutimetrackingheadlettracking > a.button.tracking {
+	background-position:1px -55px;
+}
+
+#todoyutimetrackingheadlettracking .tracking {
+
+}
+
+#todoyutimetrackingheadlettracking .tracking > div {
+	display:inline-block;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskDetails {
+	width:270px;
+	overflow:hidden;
+	border-right:1px solid #ddd;
+	margin-left:3px;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskDetails a {
+	display:inline-block !important;
+	width:100%;
+	padding:0;
+	height:15px;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskDetails a:hover {
+	background-color:#E2E2E2;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskTime {
+	width:260px;
+	margin-left:5px;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskTime > div {
+	display:inline-block;
+	height:15px;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskTime .currentTracking {
+	font-weight:bold;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskTime .percent .number {
+	float:left;
+	margin-right:5px;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskTime .percent .bar {
+	width:100px;
+	height:12px;
+	display:block;
+	float:left;
+	border:1px solid #ddd;
+	background-color:#e3eace;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskTime .percent .bar .progress {
+	background-color:#d0ddcf;
+	display:inline-block;
+	height:100%;
+}
+
+#todoyutimetrackingheadlettracking .tracking .taskTime .estimatedWorkload {
+	float:left;
+	margin-left:5px;
+}
+
+#todoyutimetrackingheadlettracking .tracking .stop {
+	position:absolute;
+	top:6px;
+	right:4px;
+}
+
+#todoyutimetrackingheadlettracking .tracking .stop .icon {
+	background-position:5px 1px;
+}
+
+
+/* ----------------------------------------------
+	Inactive tracking
+   ---------------------------------------------- */
+#todoyutimetrackingheadlettracking .inactive {
+	padding:2px;
+}
+
+#todoyutimetrackingheadlettracking .inactive > li {
+	border-left-width:4px;
+	border-left-style:solid;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#ddd;
+	display:block;
+	padding:5px;
+	background-color:#fff;
+	position:relative;
+	height:15px;
+}
+
+#todoyutimetrackingheadlettracking .inactive > li > div {
+	display:inline-block;
+	width:500px;
+}
+
+#todoyutimetrackingheadlettracking .inactive > li > .title {
+	cursor:pointer;
+}
+
+#todoyutimetrackingheadlettracking .inactive > li > .title > div {
+	display:inline-block;
+}
+
+#todoyutimetrackingheadlettracking .inactive > li > .title .taskNumber {
+	width:60px;
+}
+#todoyutimetrackingheadlettracking .inactive > li > .title .taskTitle {
+	width:380px;
+}
+
+#todoyutimetrackingheadlettracking .inactive > li > .title .taskTime {
+	width:50px;
+}
+
+#todoyutimetrackingheadlettracking .startTracking {
+	margin-top:1px;
+}
+#todoyutimetrackingheadlettracking .inactive .startTracking {
+	position:absolute;
+	top:0;
+	right:4px;
+	width:32px;
+}
+
+#todoyutimetrackingheadlettracking .inactive .startTracking .label {
+	display:none;
+}

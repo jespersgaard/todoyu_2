@@ -1,0 +1,355 @@
+/* ----------------------------------------------
+	Extension icon: stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconContact {
+	background:url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconContact .title {
+	background:url('../img/exticon.png') no-repeat 0 5px;
+}
+
+.quickInfoPerson {
+	cursor:help;
+}
+
+
+
+/* --------------------------
+	Sub menu
+   -------------------------- */
+#navi-main-list-contact li.item a {
+	background-image:url(../img/icons.png) !important;
+	background-repeat:no-repeat;
+}
+
+#navi-main-list-contact li.itemContactPerson a {
+	background-position:6px 6px;
+}
+
+#navi-main-list-contact li.itemContactCompany a {
+	background-position:6px -146px;
+}
+
+span.wizardIcon.createWizardPerson	{
+	background:url(../img/icons.png) no-repeat 0 -90px;
+}
+
+span.wizardIcon.createWizardCompany	{
+	background:url(../img/icons.png) no-repeat 0 -240px;
+}
+
+
+
+/* -----------------------------------
+	Create mode options in headlet
+   ----------------------------------- */
+#todoyuheadletquickcreate li.itemContactCompany a {
+	background:url(../img/icons.png) no-repeat 5px -238px;
+}
+
+#todoyuheadletquickcreate li.itemContactPerson a {
+	background:url(../img/icons.png) no-repeat 5px -88px;
+}
+
+
+
+/* ------------------------------------
+	Quick create wizard popUp styling
+   ------------------------------------ */
+#quickcreate.dialog.company div#quickcreate_top.dialog_title {
+	padding:0 0 0 22px;
+	background:url(../img/icons.png) no-repeat 0 -241px;
+}
+
+#quickcreate.dialog.person div#quickcreate_top.dialog_title {
+	padding:0 0 0 22px;
+	background:url(../img/icons.png) no-repeat 0 -91px;
+}
+
+
+
+/* -----------------
+	Search
+   ----------------- */
+#todoyusearchheadletquicksearch li.searchmodeCompany a {
+	background:url(../img/icons.png) no-repeat 3px -148px !important;
+}
+#todoyusearchheadletquicksearch form.searchmodeCompany a.mode {
+	background:url(../img/icons.png) no-repeat 3px -534px !important;
+}
+#todoyusearchheadletquicksearch-modes li.searchmodePerson a {
+	background:url(../img/icons.png) no-repeat 3px 3px !important;
+}
+#todoyusearchheadletquicksearch form.searchmodePerson a.mode {
+	background:url(../img/icons.png) no-repeat 3px -504px !important;
+}
+
+#search-results td {
+	cursor:default;
+}
+
+
+
+	/* Company search */
+#search-tab-company span.icon {
+	background:url(../img/icons.png) transparent 0 -146px;
+}
+
+#navi-main-list-search li.itemSearchCompany a {
+	background:transparent url(../img/icons.png) 4px -146px no-repeat !important;
+}
+
+
+
+	/* Person search */
+#search-tab-person span.icon {
+	background:url(../img/icons.png) transparent 0 4px;
+}
+
+#navi-main-list-search li.itemSearchPerson a {
+	background:transparent url(../img/icons.png) 4px 4px no-repeat !important;
+}
+
+#navi-main-list-search li.itemSearchPerson a:hover,
+#navi-main-list-search li.itemSearchCompany a:hover {
+	background-color:#eff3e5 !important;
+}
+
+
+/* ----------------------------
+	Contact listing general
+   ---------------------------- */
+#paging-person table tbody tr,
+#paging-company table tbody tr {
+	cursor:pointer;
+}
+
+	/* Column configs */
+#contact-details .actions button {
+	margin:0 5px;
+}
+#contact-details .actions .icon {
+	cursor:pointer;
+	margin-right:5px;
+}
+#contact-details .actions .icon {
+	background:url(../img/icons.png) no-repeat;
+}
+
+#contact-details .actions .backToList {
+	/*float:left;*/
+}
+#contact-details .actions .backToList .icon {
+	background:url(../../../../core/asset/img/icons.png) no-repeat 3px -1890px;
+}
+
+
+
+/* -------------------------
+	Tabs
+   -------------------------*/
+#contact-tabs .tabkey-person .icon {
+	background:url(../img/icons.png) no-repeat 0 6px;
+}
+
+#contact-tabs .tabkey-company .icon {
+	background:url(../img/icons.png) no-repeat 0 -146px;
+}
+
+
+
+/* -------------------------
+	Person list
+   ------------------------- */
+#contact-details .actions .buttonPersonEdit .icon {
+	background-position:6px -27px;
+	width:22px;
+}
+#contact-details .actions button.buttonPersonDelete .icon {
+	background-position:6px -57px;
+	width:22px;
+}
+
+div#search-results p#person-listing-message-emptylist,
+div#search-results p#company-listing-message-emptylist {
+	display:none;
+}
+
+
+
+/* -------------------------
+	Company list
+   -------------------------*/
+#contact-details div.actions .buttonCompanyEdit .icon {
+	background-position:6px -178px;
+	width:22px;
+}
+#contact-details.company div.actions .buttonCompanyDelete .icon {
+	background-position:6px -208px;
+	width:22px;
+}
+#contact-details div.actions .buttonCompanyEdit span.icon {
+	background-position:6px -178px;
+	width:22px;
+}
+
+
+
+/* ---------------------
+	Visiting card
+   -------------------- */
+div.visitingCardContent {
+	padding:12px 12px 18px 12px !important;
+}
+
+div.visitingCardContent table tr td {
+	text-align:left;
+	padding:2px 2px 2px 8px !important;
+}
+
+div.visitingCardContent table tr td.label {
+	padding-right:18px;
+	letter-spacing:0.3px;
+}
+
+#search-tab-contact span.icon {
+	background:url(../img/icons.png) no-repeat 0 6px;
+}
+
+/* -------------------
+	Person and Company Listing
+   ------------------- */
+.personListing span.icon,
+.companyListing span.icon {
+	background-image:url(../img/icons.png);
+	background-repeat:no-repeat;
+	background-position:2px 2px;
+}
+.personListing td.actions span.actions,
+.companyListing td.actions span.actions {
+	float:right;
+}
+.personListing td.actions span.icon,
+.companyListing td.actions span.icon {
+	cursor:pointer;
+	display:inline-block;
+	width:25px;
+}
+.personListing td.login span.icon {
+	background-position:2px -568px;
+}
+.personListing td.actions span.info {
+	background-position:5px -356px;
+}
+.personListing td.actions span.edit {
+	background-position:5px -26px;
+}
+.personListing td.actions span.delete {
+	background-position:5px -57px;
+}
+
+.companyListing span.icon {
+	background-position:2px -149px;
+}
+.companyListing td.actions span.info {
+	background-position:5px -356px;
+}
+.companyListing td.actions span.edit {
+	background-position:5px -178px;
+}
+.companyListing td.actions span.delete {
+	background-position:5px -208px;
+}
+
+/* -------------------
+	Person Details
+   ------------------- */
+#contact-details div.image img {
+	margin-top:3px;
+	border:solid #d5dee5;
+	border-width:4px 4px 21px 4px;
+}
+
+#contact-details .left {
+	float:left;
+	margin-right:13px;
+	padding:0 0 6px 0;
+}
+
+#contact-details div.clear {
+	clear:both;
+	width:100%;
+}
+
+#contact-details h1 {
+	white-space:normal;
+}
+
+#contact-details h3 {
+	margin-bottom:5px;
+}
+
+#contact-details div.actions {
+	float:right;
+	padding-top:5px;
+}
+
+#contact-details .content a {
+	text-decoration:underline !important;
+}
+
+button.uploadContactImage .icon {
+	background:url(../img/icons.png) no-repeat 6px -448px;
+	width:25px;
+}
+button.removeContactImage .icon {
+	background:url(../img/icons.png) no-repeat 6px -478px;
+	width:25px;
+}
+
+
+
+/* -------------------
+	Person Profile
+   ------------------- */
+#panelwidget-profilemodules li.contact {
+	background:url(../img/exticon.png) no-repeat 5px 3px;
+}
+
+#contact-tabs .tabkey-contact .icon {
+	background:url(../img/icons.png) no-repeat 0 6px;
+}
+
+.fElement.typeRecords.recordsStaff .recordIcon {
+	background:url(../img/icons.png) no-repeat 2px 2px;
+}
+
+
+
+/* ----------------------
+	Company Details
+   ---------------------- */
+div#contact-details.company div.employeePart table.personListing tr.headerLine {
+	border-radius:0;
+}
+
+div#contact-details.company div.employeePart table.personListing tr.headerLine th {
+	background-image:none;
+	background:#eeeeee;
+	border:none;
+}
+
+div#contact-details.company div.employeePart table.personListing tr.odd {
+	background-color:transparent;
+}
+
+div#contact-details.company div.employeePart table.personListing tr td {
+	border-top:1px solid #eee;
+}
+
+div#contact-details.company div.employeePart table.personListing tr th.jobtype,
+div#contact-details.company div.employeePart table.personListing tr td.jobtype {
+	border-left:1px solid #dddddd;
+	padding:5px;
+}

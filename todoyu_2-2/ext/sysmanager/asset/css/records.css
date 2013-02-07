@@ -1,0 +1,172 @@
+/* ----------------------------
+	Tables
+   ---------------------------- */
+table.recordsList {
+	width:650px;
+	border:0;
+}
+table.recordsList td.actions div.icon {
+	cursor:pointer;
+	margin-right:5px;
+}
+
+
+
+/* ----------------------------
+	Tabs
+   ---------------------------- */
+#records-tabs .all .icon {
+	background:url(../img/icons.png) no-repeat 0 -625px;
+}
+#records-tabs .extTypes .icon {
+	background:url(../img/icons.png) no-repeat 0 5px;
+}
+#records-tabs .typeRecords .icon {
+	background:url(../img/icons.png) no-repeat 0 -775px;
+}
+#records-tabs .openRecord .icon {
+	background:url(../img/icons.png) no-repeat 0 -325px;
+}
+
+
+
+/* ----------------------------
+	Types of all extensions
+   ---------------------------- */
+.typesAll td.icon {
+	width:18px;
+}
+.typesAll td.exticon {
+	width:18px;
+}
+.typesAll td.icon {
+	background:url(../img/icons.png) no-repeat 2px -775px;
+}
+.typesAll .actions .edit {
+	background:url(../img/icons.png) no-repeat 0 -629px;
+}
+
+
+
+/* ----------------------------
+	Types of one extension
+   ---------------------------- */
+.typesExtension td.icon {
+	width:15px;
+	background:url(../img/icons.png) no-repeat 3px -775px;
+}
+.typesExtension td.recordtype {
+	width:170px;
+}
+.typesExtension td.description {
+	width:250px;
+}
+.typesExtension td.records {
+	width:80px;
+}
+.typesExtension td.actions {
+	width:50px;
+}
+
+.typesExtension .actions .list {
+	background:url(../img/icons.png) no-repeat 0 -628px;
+}
+
+
+
+/* ----------------------------
+	Records listing
+   ---------------------------- */
+.recordTypeInfo {
+	margin:10px 0;
+}
+.recordTypeInfo .add {
+	float:right;
+}
+.recordTypeInfo .add button .icon {
+	background:url(../img/icons.png) no-repeat 0 -388px;
+}
+
+.recordsListing td.icon {
+	width:15px;
+}
+.recordsListing td.label {
+	width:505px;
+}
+.recordsListing td.actions {
+	width:50px;
+}
+
+.recordsListing td.icon {
+	background:url(../img/icons.png) no-repeat 3px -325px;
+}
+.recordsListing .isActive0 td.icon {
+	background:url(../img/icons.png) no-repeat 3px -936px;
+}
+.recordsListing .isPreferred1 td.icon {
+	background:url(../img/icons.png) no-repeat 3px -964px;
+}
+.recordsListing .actions .edit {
+	background:url(../img/icons.png) no-repeat 0 -358px;
+}
+.recordsListing .actions .delete {
+	background:url(../img/icons.png) no-repeat 0 -418px;
+}
+
+
+
+#record-type-list li,
+#record-list li {
+	padding:5px 10px;
+	position:relative;
+	border-bottom:1px dotted #aaa;
+}
+
+#record-type-list li {
+	padding-left:30px;
+	background:url(../img/icons.png) no-repeat 5px -627px;
+}
+
+#record-list li span.additionalInformations {
+	position:absolute;
+	right:400px;
+}
+
+#record-list li span.delete {
+	cursor:pointer;
+	height:16px;
+	position:absolute;
+	right:5px;
+	top:4px;
+	width:16px;
+	background:transparent url(../img/icons.png) no-repeat 0 -420px;
+}
+
+#record-list li span.edit {
+	cursor:pointer;
+	height:16px;
+	position:absolute;
+	right:30px;
+	top:4px;
+	width:16px;
+	background:transparent url(../img/icons.png) no-repeat 0 -360px;
+}
+
+#list .headerLine .createNew	{
+	padding-left:20px;
+	background:transparent url(../img/icons.png) no-repeat 0 -384px;
+	cursor:pointer;
+	position:absolute;
+	right:10px;
+}
+
+#list form fieldset {
+	float:left;
+	width:100%;
+}
+
+#list .headerLine .back {
+	padding-left:20px;
+	background:transparent url(../img/icons.png) no-repeat 0 -440px;
+	cursor:pointer;
+}

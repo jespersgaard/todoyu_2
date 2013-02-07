@@ -1,0 +1,12 @@
+#panelwidget-projectlist h1 span.title {
+	background:url(../img/panelwidget-projectlist.png) no-repeat 4px 4px;
+}
+
+#panelwidget-projectlist li {
+	border-left-width:4px;
+	border-left-style:solid;
+}
+
+#panelwidget-projectlist li a {
+	background:url(../img/icons.png) no-repeat 4px -449px;
+}

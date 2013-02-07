@@ -1,0 +1,106 @@
+#todoyusearchheadletquicksearch-button {
+	background:url(../img/icons.png) no-repeat 5px 5px;
+}
+
+#todoyusearchheadletquicksearch .content {
+	width:200px;
+}
+
+#todoyusearchheadletquicksearch form {
+	position:relative;
+	padding:5px 38px 5px 5px;
+}
+
+#headlets #todoyusearchheadletquicksearch-mode-button {
+	position:absolute;
+	top:0;
+	right:0;
+	width:28px;
+	height:26px;
+	padding:0;
+	background:transparent url(../img/icons.png) no-repeat 3px -536px;
+}
+
+
+/* -------------------
+	Modes sub menu
+   ------------------- */
+#todoyusearchheadletquicksearch-modes {
+	top:0;
+	margin-top:3px;
+	width:198px;
+	margin-left:-3px;
+}
+	#todoyusearchheadletquicksearch-modes ul {
+		width:198px;
+		border:none !important;
+	}
+
+	#todoyusearchheadletquicksearch-modes li:hover {
+		border:none;
+		background-color:#edf0df;
+	}
+
+
+
+#todoyusearchheadletquicksearch li.searchmodeAll a {
+	background:url(../img/icons.png) no-repeat 2px -27px;
+}
+
+#todoyusearchheadletquicksearch-suggest {
+	position:absolute;
+	width:350px;
+	text-align:left;
+	z-index:210;
+	padding-bottom:20px;
+}
+
+	#todoyusearchheadletquicksearch-suggest ul {
+		background-color:#fff;
+		border-top:none;
+		border:1px solid #ddd;
+		border-bottom:none;
+	}
+
+	#todoyusearchheadletquicksearch-suggest .quicksearch-suggest {
+		-webkit-box-shadow:2px 2px 5px #999;
+		-moz-box-shadow:2px 2px 5px #999;
+		box-shadow:2px 2px 5px #999;
+	}
+
+	#todoyusearchheadletquicksearch-suggest ul ul {
+		background-color:transparent;
+		border:none;
+	}
+
+	#todoyusearchheadletquicksearch-suggest ul .type {
+		display:block;
+		font-weight:bold;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		padding:5px 3px 5px 10px;
+		background-color:#e2e2e2;
+		border-bottom:1px solid #ddd;
+	}
+
+	#todoyusearchheadletquicksearch-suggest ul li ul li a {
+		display:block;
+		padding:2px 2px 2px 10px;
+		border-bottom:1px solid #ccc;
+	}
+
+	#todoyusearchheadletquicksearch-suggest ul li ul li.active a,
+	#todoyusearchheadletquicksearch-suggest ul li ul li a:hover {
+		background-color:#f2f2d2;
+	}
+	
+	#todoyusearchheadletquicksearch-suggest a span.title {
+		display:block;
+	}
+	#todoyusearchheadletquicksearch-suggest a span.keyword {
+		font-weight:bold;
+	}
+
+	#todoyusearchheadletquicksearch-suggest a span.info {
+		color:#aaa;
+	}

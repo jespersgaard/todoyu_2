@@ -1,0 +1,425 @@
+/* ------------
+	Task
+   ----------- */
+div.task,
+div.task .task:last-child {
+	border-bottom:1px solid #ddd;
+}
+div.task .subtasks {
+	border-top:1px solid #ddd;
+}
+div.task .subtasks .task:last-child {
+	border-bottom:none;
+}
+
+.task.marked,
+.task.marked h3,
+.task.marked div {
+	background-color:#f9f9b5 !important;
+}
+
+/* --------------------
+	Task header
+   -------------------- */
+.task h3 {
+	display:block;
+	position:relative;
+	clear:both;
+	background-color:transparent;
+	height:22px;
+	padding:0;
+}
+.task.expanded > h3 {
+	background-color:#e2e2e2;
+}
+.task.expanded > h3 .headLabel {
+	font-weight:bold;
+}
+
+.task .statusColor {
+	position:absolute;
+	width:1px;
+	height:22px;
+	left:0;
+	top:0;
+	border-left-width:4px;
+	border-left-style:solid;
+}
+
+.task .dndHandle {
+	position:absolute;
+	width:12px;
+	height:22px;
+	left:-4px;
+	top:0;
+	background-color:#FFF; /* IE fix */
+	opacity:0.001; /* IE fix */
+}
+
+.task .dndHandle:hover {
+	background-color:purple;
+}
+
+
+.task > h3 > span.subtaskTrigger {
+	display:inline-block;
+	float:left;
+	height:22px;
+	width:13px;
+	margin-left:10px;
+}
+.task > h3 > span.subtaskTrigger.expandable {
+	cursor:pointer;
+	background:url(../../../../core/asset/img/tree-icons.png) no-repeat 1px -23px;
+}
+
+.task > h3 > span.subtaskTrigger.expandable.expanded {
+	background:url(../../../../core/asset/img/tree-icons.png) no-repeat 1px 7px;
+}
+
+.task h3 .headLabel {
+	display:inline-block;
+	cursor:pointer;
+	min-width:350px;
+	height:22px;
+	padding:4px;
+}
+
+.task h3 .headLabel span {
+	display:inline-block;
+}
+
+.task h3 .headLabel .taskDate {
+	width:50px;
+}
+
+.task h3 .headLabel .projectName {
+	margin-left:5px;
+	max-width:360px;
+}
+
+.taskListing .task .headLabel {
+	padding-left:15px;
+}
+
+
+
+
+/* -------------------------------------
+	Drag'n'drop hover styles
+   ------------------------------------- */
+#dragDropMarker {
+	height:0;
+	overflow:visible;
+	position:absolute;
+	z-index:100000;
+}
+	#dragDropMarker div {
+		position:absolute;
+		left:-31px;
+		top:-12px;
+		height:25px;
+		width:30px;
+		background:url(../img/icons.png) no-repeat;
+	}
+		#dragDropMarker.in div {
+			top:1px;
+			background-position:0 -650px;
+		}
+		#dragDropMarker.after div {
+			background-position:0 -678px;
+		}
+		#dragDropMarker.before div {
+			top:-14px;
+			background-position:0 -710px;
+		}
+
+div.task.dragDropTarget > h3 {
+	background-color:#E3EACE;
+}
+.task .dndHandle.draggable {
+	cursor:move;
+}
+
+.lostTasks .task .dndHandle.draggable {
+	cursor:default;
+}
+
+
+/* -------------------------
+	Task header (container)
+   ------------------------ */
+
+.task.container > h3 {
+	background-color:#f7f7f7;
+	border-right-width:4px;
+	border-right-style:solid;
+}
+.task.container > h3 > .statusColor {
+	border-left-width:8px;
+}
+
+.task.container > .details {
+
+}
+/* end of styles only for container element */
+
+.task h3 .taskHeadExtras {
+	display:inline-block;
+	overflow:hidden;
+	padding:2px 3px 1px 3px;
+	position:absolute;
+	right:145px;
+	text-align:right;
+	top:2px;
+	width:100px;
+}
+.task.container > h3 > .taskHeadExtras {
+	right:141px;
+	border-right:0 solid #ddd;
+}
+.task.expanded h3 .taskHeadExtras,
+.task.expanded h3 .taskIcons {
+	border-color:#ccc;
+}
+
+.task h3 .taskHeadExtras span {
+	cursor:default;
+}
+.headerLine .taskNumber,
+.task h3 .taskNumber {
+	display:inline-block;
+	position:absolute;
+	width:45px;
+}
+.headerLine .taskNumber {
+	right:92px;
+}
+.task h3 .taskNumber {
+	top:4px;
+	right:93px;
+	cursor:text;
+}
+.task.container > h3 > .taskNumber {
+	right:89px;
+}
+
+.task h3 .headLabel a.title {
+	display:block;
+	width:420px;
+	padding:2px 0;
+	margin-top:-2px;
+}
+
+
+
+/* ----------------------
+	Task Icons
+   ---------------------- */
+.task span.taskIcons {
+	position:absolute;
+	right:0;
+	height:16px;
+	width:75px;
+	overflow:hidden;
+	margin-top:2px;
+	padding:0 3px 1px 3px;
+	border-left:1px solid #ddd;
+}
+.task.container > h3 > .taskIcons {
+	width:71px;
+}
+
+.task span.taskIconsOverflow {
+	background:url(../img/icons.png) no-repeat right -527px;
+}
+
+.task span.taskIconsOverflow:hover {
+	width:auto;
+	position:absolute;
+	background:white;
+	z-index:1000;
+}
+
+.expanded span.taskIconsOverflow:hover {
+	background:#e3eace;
+}
+
+.task span.taskIcons span {
+	float:left;
+	clear:none;
+	width:14px;
+	height:16px;
+	margin:0 0 0 3px;
+}
+
+.task span.taskIcons .taskcontainer {
+	background:url(../img/icons.png) no-repeat 0 -87px;
+}
+
+.task span.taskIcons .isPublic {
+	background:url(../../../../core/asset/img/icons.png) no-repeat 1px -1108px;
+}
+
+.task span.taskIcons .notAcknowledged {
+	width:10px;
+	cursor:pointer;
+	background:transparent url('../../../../core/asset/img/icons.png') no-repeat 0 -1288px;
+}
+
+.task span.taskIcons .dateover {
+	width:14px;
+	background:url(../img/icons.png) no-repeat 0 -328px;
+}
+
+.task span.taskIcons .locked {
+	width:14px;
+	background:url(../img/icons.png) no-repeat 0 -480px;
+}
+
+
+
+/* ------------------
+	Task details
+   ------------------ */
+.task > .details {
+	border-left-width:1px;
+	border-left-style:solid;
+}
+
+	.tasks .task .details .data {
+		padding:7px 0;
+	}
+		.tasks .task .details .data .task-inline-edit {
+			margin:-7px 0;
+		}
+
+		/* Description */
+	.tasks .task .details .data div.left {
+		float:left;
+		width:300px;
+		max-width:45%;
+		padding:0 0 0 24px;
+	}
+
+	.tasks .task .details .description * {
+		line-height:15px;
+		white-space:normal;
+		word-wrap:break-word;
+	}
+
+		/* properties */
+	.tasks .task .details .data .right {
+		width:280px;
+		max-width:45%;
+		float:right;
+	}
+
+	.tasks .task .details .properties dt {
+		float:left;
+		width:50%;
+	}
+
+	.tasks .task .details .properties dd {
+		float:left;
+		width:50%;
+	}
+
+	.tasks .task .details .properties dd span.icon {
+		display:none;
+		width:14px;
+		height:14px;
+	}
+
+		.task .properties .unread .icon {
+			background:url(../../../../core/asset/img/icons.png) no-repeat 0 -1288px;
+			display:block !important;
+			margin-left:-14px;
+		}
+
+		.task dd.acknowledged span.icon {
+			background:url(../../../../core/asset/img/icons.png) no-repeat 0 -1312px;
+			display:block !important;
+			margin-left:-14px;
+		}
+
+	.task .details .properties * {
+		font-weight:normal;
+	}
+
+	div.task div.details div div.right dl dt.even,
+	div.task div.details div div.right dl dd.even {
+		background-color:#f9f9f9;
+	}
+
+	.task .details .right .sectionStart {
+		padding-top:10px;
+		margin-top:2px;
+		border-top:1px solid #eee;
+	}
+
+	.tasks .task .details .properties dt {
+		clear:left;
+	}
+
+	.task fieldset.basic,
+	.task fieldset.details {
+		padding-top:15px;
+	}
+
+
+/* -----------------
+	Task colors
+   ---------------- */
+
+	/* sub tasks */
+.tasks .subtasks {
+	padding-left:10px;
+}
+
+.task-inline-edit .type-date input {
+	width:50px;
+}
+
+.taskDetails .comment p {
+	padding:5px;
+}
+
+.taskcontainer {
+	background:url('../img/icons.png') no-repeat -5px -75px;
+}
+
+.task-inline-edit .bottom {
+	float:left;
+	clear:both;
+}
+
+#taskList,
+#tasks {
+	z-index:1;
+}
+
+#taskList h1.headerProjTermine {
+	margin-top:20px;
+}
+
+
+
+/* ----------------------------
+	Additional task icons
+   ---------------------------- */
+.task-status-container h3 a,
+.task-status-container div.taskdetails {
+	border-left-color:#1E2022;
+	background-color:#fbfbf4;
+	/*background:url(../../../../core/asset/img/bgs/taskcontainer.png);*/
+}
+
+
+/* ---------------------------
+	Task Search Modification
+   --------------------------- */
+#action-panel .button.exportCsv .icon {
+	background:transparent url('../../../../core/asset/img/icons.png') 6px -1598px no-repeat;
+	width:24px;
+}

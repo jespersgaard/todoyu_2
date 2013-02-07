@@ -1,0 +1,319 @@
+/* -----------------------
+	Extension Listing
+   -----------------------*/
+.extListing .extension {
+	border-bottom:1px solid #ccc;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	position:relative;
+	display:inline-block;
+}
+
+.extListing .extension > div {
+	float:left;
+	clear:none;
+}
+
+.extListing .extension .main {
+	margin-left:30px;
+	margin-right:10px;
+	width:420px;
+}
+
+.extListing .extension .right {
+	width:180px;
+	padding-left:10px;
+}
+
+.extListing .extension h5 {
+	border-bottom:none;
+	margin-bottom:10px;
+	padding-left:0;
+}
+
+.extListing .extension h5 div {
+	width:100%;
+}
+
+.extListing .extension h5 .author {
+	margin-left:10px;
+}
+
+.extListing .extension h5 .title {
+	font-size:20px;
+}
+
+.extListing .extension h5 img {
+	position:absolute;
+	left:0;
+	top:8px;
+}
+
+.extListing .extension .right div {
+	padding:5px;
+	border-bottom:1px solid #ccc;
+}
+
+.extListing .extension .bottom {
+	width:100%;
+	clear:both;
+	margin-top:5px;
+}
+
+.extListing .extension .bottom button {
+	float:right;
+	margin:0 10px;
+}
+
+.coreUpdate .installButtons button .icon,
+.extListing .extension .bottom button .icon {
+	background-image:url(../img/icons.png);
+}
+
+.coreUpdate .installButtons button.info .icon,
+.extListing .extension .bottom button.info .icon {
+	background-position:5px -748px;
+	width:22px;
+}
+
+.coreUpdate .installButtons button.update .icon,
+.extListing .extension .bottom button.update .icon {
+	background-position:0 -28px;
+}
+
+.extListing .extension .bottom button.install .icon {
+	background-position:5px -28px;
+	width:22px;
+}
+
+
+
+/* -----------------------
+	Warnings
+   -----------------------*/
+.extListing .extension .warning {
+	margin-top:10px;
+	padding:5px;
+	border:2px dashed #f00;
+	background-color:#f0f0f0;
+}
+
+.extListing .extension .warning ul {
+	list-style-type:square;
+	list-style-position:inside;
+}
+
+.extListing .extension .warning ul li {
+	color:#f00;
+	cursor:pointer;
+}
+
+
+
+/* -----------------------
+	Search
+   -----------------------*/
+.extensionSearch .control {
+	margin-bottom:10px;
+}
+
+.resultinfo {
+	padding:10px;
+	background-color:#efefef;
+	margin-bottom:10px;
+}
+
+
+
+/* ----------------------
+	Connection error
+   -----------------------*/
+.resultinfo.error .title {
+	font-weight:bold;
+	font-size:16px;
+	color:red;
+	margin-bottom:5px;
+}
+
+.resultinfo.error .message {
+	font-family:monospace;
+	font-size:14px;
+	margin-bottom:5px;
+}
+
+
+
+/* -----------------------
+	Updates
+   -----------------------*/
+
+/* Core update */
+.repositoryUpdates .coreUpdate {
+	padding:12px 12px 24px 12px;
+	margin:6px 0 20px 0;
+	background-color:#ffffdb;
+}
+
+.repositoryUpdates .coreUpdate .coreUpdateInfos {
+	float:left;
+}
+
+.repositoryUpdates .coreUpdate .coreUpdateInfos td,
+.repositoryUpdates .coreUpdate .coreUpdateInfos th {
+	padding:3px;
+}
+.repositoryUpdates .coreUpdate .coreUpdateInfos th {
+	width:100px;
+}
+
+.repositoryUpdates .coreUpdate .installButtons {
+	float:right;
+}
+
+
+
+/* -----------------------
+	Dialog
+   -----------------------*/
+.repositoryDialog {
+	padding:10px;
+}
+
+.repositoryDialog h1 {
+	font-size:18px;
+	font-weight:bold;
+	margin-bottom:20px;
+	text-align:left;
+}
+
+.repositoryDialog .buttons {
+	margin-top:20px;
+	padding-top:10px;
+	clear:both;
+}
+.repositoryDialog .info {
+	margin-top:5px;
+	padding:5px;
+}
+
+.repositoryDialog .versionDetails {
+	width:240px;
+	margin-left:20px;
+}
+
+.repositoryDialog .versionDetails table td,
+.repositoryDialog .versionDetails table th {
+	padding:3px;
+	border-bottom:1px solid #ccc;
+	text-align:left;
+}
+
+.repositoryDialog .versionDetails th {
+	width:80px;
+}
+
+.repositoryDialog .versionDetails td {
+	width:130px;
+}
+
+.repositoryDialog .col {
+	float:left;
+	clear:none;
+}
+
+.repositoryDialog .versionInformation {
+	padding:10px;
+	text-align:left;
+	width:300px;
+}
+
+.repositoryDialog .versionInformation ul {
+	list-style:square inside;
+}
+
+.repositoryDialog .versionInformation .subtitle {
+	display:block;
+	font-weight:bold;
+	margin-bottom:5px;
+}
+
+
+/* ---------------------------------
+	Extension Dialog
+   ---------------------------------*/
+.repositoryDialog.extensionDialog .warning {
+	background-color:#ffe683;
+	padding:8px 12px 12px;
+	text-align:left;
+}
+
+.repositoryDialog.extensionDialog button.install .icon {
+	background:url(../img/icons.png) no-repeat 0 -28px;
+}
+
+
+
+/* ---------------------------------
+	Extension Installation Dialog
+   ---------------------------------*/
+.repositoryDialog.extensionDialog.extInstall .license {
+	background-color:#fff;
+	height:200px;
+	overflow:auto;
+	padding:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:left;
+	font-family:monospace;
+	
+	font-size:12px;
+}
+
+.repositoryDialog.extensionDialog.extInstall .acceptlicense {
+	text-align:left;
+	font-weight:bold;
+}
+
+.repositoryDialog.extensionDialog.extInstall .acceptlicense input {
+	width:20px;
+}
+
+.repositoryDialog.extensionDialog.extInstall .licenseinfo {
+	background-color:#e3eace;
+	text-align:left;
+}
+.repositoryDialog.extensionDialog.extInstall .licenseinfo.noLicense {
+	background-color:#ff0000;
+	text-align:left;
+	color:#fff;
+}
+
+.repositoryDialog.extensionDialog.extInstall .licenseinfo.buyextension {
+	background-color:transparent;
+}
+.repositoryDialog.extensionDialog.extInstall .licenseinfo.buyextension a{
+	font-weight:bold;
+	font-size:16px;
+	text-decoration:underline;
+	padding-left:20px;
+	background:url(../img/icons.png) no-repeat 0 -718px;
+}
+
+.repositoryDialog.extensionDialog.extInstall .licenseinfo.buyextension a:hover{
+	color:#4c4c4c;
+}
+
+
+.repositoryDialog.extensionDialog.extInstall .warningMajorUpdate {
+	background-color:#f00;
+	color:#fff;
+}
+
+
+
+/* --------------------------------
+	Core Update Dialog
+   ---------------------------------*/
+.repositoryDialog.coreDialog button.install .icon {
+	background:url(../img/icons.png) no-repeat 0 -28px;
+}

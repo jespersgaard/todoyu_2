@@ -1,0 +1,89 @@
+<li id="task-comment-{$id}" class="tabBlock comment {if $is_public}{if isSeeAllCommentsAllowed()}isPublic{/if}{/if}">
+	<div class="comment-properties">
+		{if $isUnapproved}
+			<a href="javascript:void(0)" id="comment-{$id}-seenstatus" onclick="Todoyu.Ext.comment.setSeenStatus({$id}, {personid()})" class="comment-personapproval hasicon"></a>
+		{/if}
+		<span id="task-comment-{$id}-crdate" class="comment-crdate">{dateFormat $date_create datetime}</span> -
+		<span id="task-comment-{$id}-person" class="comment-person">
+			{personLabel idPrefix="comment-personcreate" idRecord=$id idPerson=$person_create.id}
+		</span>
+		<span id="task-comment-{$id}-id" class="comment-id" title="{Label comment.ext.id}">c{$id}</span>
+		<span id="task-comment-{$id}-options" class="comment-options">
+
+		{* --------------------------- Edit ------------------------- *}
+		{if $canEdit}
+			<a href="javascript:void(0)" onclick="Todoyu.Ext.comment.edit({$id_task}, {$id})" class="icon comment-edit" title="{Label comment.ext.icon.edit}">
+				<span class="hidden">{Label comment.ext.icon.edit}</span>
+			</a>
+		{/if}
+
+		{* ------------------------ Make public ---------------------- *}
+		{if $canMakePublic}
+			<a href="javascript:void(0)" onclick="Todoyu.Ext.comment.togglePublic({$id})" class="icon public-trigger {if $is_public}comment-public{/if}" title="{Label comment.ext.icon.toggleCustomerVisibility}" id="public-trigger-{$id}">
+				<span class="hidden">{Label comment.ext.icon.toggleCustomerVisibility}</span>
+			</a>
+		{/if}
+
+		{* -------------------------- Delete ------------------------ *}
+		{if $canDelete}
+			<a href="javascript:void(0)" onclick="Todoyu.Ext.comment.remove({$id})" class="icon comment-remove" title="{Label comment.ext.icon.remove}">
+				<span class="hidden">{Label comment.ext.icon.remove}</span>
+			</a>
+		{/if}
+		</span>
+	</div>
+	<div id="task-comment-{$id}-text" class="comment-details">
+		{* --------------------------- Comment persons (feedback, email, etc) --------------- *}
+		<div class="persons">
+		{foreach $persons_feedback feedbackPerson name=personsFeedback}
+			{if isPersonSeeAllowed($feedbackPerson.id)}
+				{if $dwoo.foreach.personsFeedback.first}
+					{Label comment.ext.comment.feedbackPersons}
+				{/if}
+
+				{if $feedbackPerson.is_seen}
+					{$class = 'commentperson-approved'}
+				{else}
+					{$class = 'commentperson-unapproved'}
+				{/if}
+				{if in_array($feedbackPerson.id, array_keys($persons_email))}
+					{$class .= '-email'}
+				{/if}
+				{personLabel idPrefix="comment-personfeedback" idRecord=$id idPerson=$feedbackPerson.id class=$class}
+				{if $dwoo.foreach.personsFeedback.last}
+					<div class="divider"> </div>
+				{/if}
+			{/if}
+		{/foreach}
+
+		{if sizeof($person_ids_mailonly) > 0}
+			{$labelRendered = 0}
+			{foreach $person_ids_mailonly emailPersonID name=personsEmai}
+				{if isPersonSeeAllowed($emailPersonID)}
+					{if $labelRendered === 0}
+						{Label comment.ext.comment.emailPersons}
+						{$labelRendered = 1}
+					{/if}
+					{personLabel idPrefix="comment-personemail" idRecord=$emailPersonID idPerson=$emailPersonID class="emailperson"}
+				{/if}
+			{/foreach}
+			<div class="divider"> </div>
+		{/if}
+
+		</div>
+		{* --------------------------- Comment itself --------------- *}
+		<div class="comment">{substituteLinkableElements(cleanHtml($comment))}</div>
+
+		{if $publicFeedbackWarning}
+			<div class="publicFeedbackWarning">{$publicFeedbackWarning}</div>
+		{/if}
+
+		{if $updateInfo}
+			<div class="updateInfo">{$updateInfo}</div>
+		{/if}
+
+	</div>
+	<div class="clear"><!-- clear --></div>
+	<div id="task-comment-log-{$id}-details" class="comment-history" style="display:none;"></div>
+	<div class="clear"><!-- clear --></div>
+</li>

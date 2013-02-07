@@ -1,0 +1,189 @@
+/* ----------------------------------------------
+	Extension icon: stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconAssets {
+	background:url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconAssets .title {
+	background:url('../img/exticon.png') no-repeat 0 5px;
+}
+
+
+
+/* ----------------------------------------------
+	Asset form elements
+   ---------------------------------------------- */
+.assetsButtons button.upload .icon,
+button.buttonUploadAsset .icon {
+	background:url(../../../../core/asset/img/icons.png) no-repeat 5px -1692px;
+	width:24px;
+}
+
+.assetsButtons button.downloadSelection .icon {
+	background:url(../img/icons.png) no-repeat 5px -687px;
+	width:22px;
+}
+
+button.buttonDeleteAsset .icon {
+	background:url(../img/icons.png) no-repeat 0 -746px;
+}
+
+.directUploadForm {
+	left:-200px;
+}
+
+.directUpload input[type=file] {
+	cursor:pointer;
+	font-size:18px;
+}
+
+form.directUploadBox,
+div.directUploadBox .fField {
+	opacity:0.001;
+	overflow:hidden;
+	position:absolute;
+	width:340px;
+	z-index:50;
+}
+
+.uploadProgress {
+	display:inline-block;
+	margin-left:50px;
+}
+
+.uploadProgress .cancelUpload {
+	background:url(../../../../core/asset/img/icons.png) no-repeat 0 -360px;
+	cursor:pointer;
+}
+
+
+
+/* ----------------------------------------------
+	Task inline upload form
+   ---------------------------------------------- */
+.inlineAssetUpload .fElement.typeUpload .fField {
+	top:10px;
+	left:-60px;
+}
+
+.inlineAssetUpload .fieldnameDelete,
+.inlineAssetUpload .fieldnameUpload {
+	float:left;
+	width:auto;
+}
+.inlineAssetUpload .fieldnameDelete .fField,
+.inlineAssetUpload .fieldnameUpload .fField {
+	width:auto;
+}
+.inlineAssetUpload .fieldnameDelete .fLabel {
+	width:0;
+}
+
+
+
+/* ----------------------------------------------
+	List
+   ---------------------------------------------- */
+.assetList .assets-table-header {
+	background:#e5e8da url(../../../../core/asset/img/bg-tabheader.png) repeat-x 0 top;
+}
+
+.assetList th {
+	padding:5px 5px 5px 0;
+	text-transform:uppercase;
+}
+
+.assetList td {
+	padding:3px 0 0 0;
+}
+
+.assetList .checkbox {
+	padding-left:5px;
+	width:20px;
+}
+.assetList .mimetype {
+	width:20px;
+}
+.assetList .person {
+	width:120px;
+}
+.assetList .filesize {
+	width:50px;
+}
+.assetList .uploaddate {
+	width:90px;
+}
+.assetList .actions {
+	width:60px;
+}
+
+.assetList .actions a {
+	background-image:url(../img/icons.png);
+	width:16px;
+	height:16px;
+	display:block;
+	float:left;
+	clear:none;
+	margin-right:3px;
+}
+
+.assetList .asset-icon-download {
+	background-position:0 -30px;
+}
+
+.assetList .asset-icon-delete {
+	background-position:0 0;
+}
+
+.assetList .asset-icon-public {
+	background-position:0 -60px;
+}
+
+.assetList .asset-icon-public.not {
+	background-position:0 -630px;
+}
+
+/* Background colors of the rows in the list */
+.assetList tr th {
+	border-bottom:1px solid white;
+}
+
+.assetList tr.selected td {
+	background-color:#e3eace;
+}
+
+
+
+/* ------------------------
+	Context menu task
+   ------------------------ */
+#contextmenu .taskContextMenu.task-add-asset {
+	background-image:url(../img/icons.png);
+	background-repeat:no-repeat;
+	background-position:6px -27px;
+}
+
+
+
+/* --------------------------
+ 	Task tab
+   --------------------------*/
+.tabContent .assetList {
+	padding-top:5px;
+}
+div.task div.taskTabs ul li.assets span.icon {
+	background:url(../img/icons.png) no-repeat 0 -25px;
+}
+
+th.assetsFilelistHeaderFilenames {
+	width:50%;
+}
+
+.assetFilesList {
+	margin-top:-4px !important;
+}
+
+.task span.taskIcons .assets {
+	background:url(../img/icons.png) no-repeat 0 -28px;
+}

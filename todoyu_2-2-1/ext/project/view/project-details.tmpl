@@ -1,0 +1,63 @@
+<div id="project-{$id}-data" class="data infoBoxOuter">
+
+	<div class="infoBox properties">
+		<h4>{Label project.ext.properties}</h4>
+		<div class="content overflow">
+			<table class="list propertiesListing">
+				{foreach $properties info}
+				<tr class="{cycle values="odd,even"}">
+					<th class="label">{Label $info.label}</th>
+					<td>
+						{if allowed('contact', 'general:area') && $info.__key == 'company' && isCompanySeeAllowed($id_company)}<a href="index.php?ext=contact&amp;tab=company&amp;id={$id_company}">{/if}
+						{$info.value}
+						{if allowed('contact', 'general:area') && $info.__key == 'company' && isCompanySeeAllowed($id_company)}</a>{/if}
+					</td>
+				</tr>
+				{/foreach}
+			</table>
+		</div>
+	</div>
+
+	<div class="infoBox">
+		<h4>{Label project.ext.attr.persons}</h4>
+		<div class="content overflow">{$assignedPersons}</div>
+	</div>
+
+	<div class="infoBox description">
+		<h4>{Label core.global.description}</h4>
+		<div class="content overflow">{substituteLinkableElements(cleanHtml($description))}</div>
+	</div>
+
+	{if isInternal()}
+		<div class="infoBox presets">
+			<h4  id="toggle-icon-presetlist-{$id}" onclick="Todoyu.Ext.project.Project.toggleTaskPresetDetails('{$id}');" class="closed">{Label project.ext.infobox.presets.title}</h4>
+			<div class="content overflow" id="taskpresetlist-{$id}" style="display:none">
+				<table class="list presetsListing">
+				{foreach $presets preset}
+					<tr class="presetRow {cycle values="odd,even"}">
+						<th>{Label $preset.label}</th>
+						<td>{$preset.value}</td>
+					</tr>
+				{/foreach}
+				</table>
+			</div>
+		</div>
+	{/if}
+
+	{* ---------- Dynamic added elements ----------- *}
+	{if $dynamicElements}
+		{foreach $dynamicElements element}
+			<div class="{$element.class} {cycle values="odd,even"}">
+				<h4>{$element.title}</h4>
+				<div class="content overflow">{$element.content}</div>
+			</div>
+		{/foreach}
+	{/if}
+
+	{if $tabs} {* ----- Only render tab container if tabs are rendered ----- *}
+		<div id="project-{$idProject}-tabcontainer" class="projectTabs">
+			{$tabs}
+		</div>
+	{/if}
+
+</div>

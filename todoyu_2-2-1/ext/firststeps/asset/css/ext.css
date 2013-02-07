@@ -1,0 +1,13 @@
+#firststepswizard-button {
+	position:fixed;
+	left:10px;
+	top:10px;
+	z-index:1000;
+	background-color:#F00;
+	color:#FFF;
+	padding:10px;
+	font-weight:bold;
+	cursor:pointer;
+	border:1px solid #000;
+	-moz-box-shadow:2px 2px 5px #999999;
+}

@@ -1,0 +1,71 @@
+@import "../../../../core/config/theme.scss";
+
+
+#panelwidget-taskbookmarks div.bookmarks ul li {
+	min-height:32px;
+	padding:0;
+	border-bottom:1px solid $colorNeutral02;
+	margin-bottom:2px;
+}
+
+#panelwidget-taskbookmarks .taskItem {
+	border-left-width:4px;
+	border-left-style:solid;
+	padding:5px 5px 5px 9px;
+	margin:-2px 0 0 0;
+	position:relative;
+	z-index:100;
+	overflow:hidden;
+	cursor:pointer;
+}
+#panelwidget-taskbookmarks .container.taskItem {
+	border-left-width:8px;
+	border-right-width:4px;
+	border-right-style:solid;
+	padding-left:5px;
+	padding-right:24px;
+}
+
+#panelwidget-taskbookmarks .taskItem .title,
+#panelwidget-taskbookmarks .taskItem .project {
+	display:inline-block;
+	width:100%;
+}
+
+#panelwidget-taskbookmarks .taskItem .project {
+	color:$colorNeutral06;
+}
+
+#panelwidget-taskbookmarks li.running .taskItem .title {
+	font-weight:bold;
+}
+
+#panelwidget-taskbookmarks .bookmarks ul li {
+	z-index:1;
+}
+#panelwidget-taskbookmarks .bookmarks ul li a.timetracking {
+	display:block;
+	float:right;
+	clear:none;
+	width:22px;
+	height:26px;
+	position:relative;
+	z-index:101;
+	background:url(../../../timetracking/asset/img/icons.png) no-repeat 0 -22px;
+}
+
+#panelwidget-taskbookmarks .bookmarks ul li.running a {
+	background-position:0 8px !important;
+}
+
+
+
+#panelwidget-taskbookmarks .handle {
+	height:100%;
+	width:5px;
+	position:absolute;
+	cursor:move;
+	top:0;
+	left:0;
+	margin-left:-5px;
+}

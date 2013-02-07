@@ -1,0 +1,145 @@
+/* ----------------------------------------------
+	Extension icon: stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconTimetracking {
+	background:url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconTimetracking .title {
+	background:url('../img/exticon.png') no-repeat 0 5px;
+}
+
+
+button.startTracking .icon {
+	background:url(../img/icons.png) no-repeat 3px -28px;
+	width:26px;
+}
+
+button.stopTracking .icon {
+	background:url(../img/icons.png) no-repeat 3px 2px;
+	width:26px;
+}
+
+
+
+
+/* ------------------------------
+	Task context menu
+   ------------------------------ */
+#contextmenu .task-timetrackstart {
+	background-image:url(../img/icons.png) !important;
+	background-position:4px -28px;
+}
+
+#contextmenu .task-timetrackstop {
+	background-image:url(../img/icons.png) !important;
+	background-position:4px 2px;
+}
+
+
+
+/* --------------------
+	Task injections
+   -------------------- */
+.task.running > h3 {
+	background-color:#f2f2d2;
+}
+.task.running.expanded > h3 {
+	background-color:#e6e6c7;
+}
+.task.running > h3 .headLabel span {
+	font-weight:bold;
+}
+
+.task .overtimed {
+	color:#ad5050 !important;
+}
+
+	.task .taskIcons .overtimed {
+		background:url(../img/icons.png) no-repeat 0 -297px;
+		width:14px !important;
+	}
+
+
+
+
+/* --------------------
+	Task tab
+   -------------------- */
+span.notracksyet {
+	padding-left:5px;
+}
+
+
+.taskTabs .trackingControl .button {
+	margin-right:5px;
+	float:left;
+}
+
+.taskTabs .trackingControl .trackingInfo {
+	margin:5px 0 0 5px;
+	float:left;
+}
+
+.taskTabs .trackingControl .trackingInfo span {
+	display:inline-block;
+}
+
+.taskTabs .trackingControl .trackingInfo span .label {
+	margin-right:3px;
+}
+
+.taskTabs .trackingControl .trackingInfo .time {
+	font-weight:bold;
+}
+.taskTabs .trackingControl .trackingInfo .totalChargeableTime {
+	margin-left:20px;
+}
+
+
+
+
+/* --------------------
+	Task
+   -------------------- */
+.task .taskHeadExtras .billingtime {
+	width:30px;
+	padding:0 3px;
+}
+
+
+
+/* -------------------------
+	Task timetracking tab
+   ------------------------- */
+.task .taskTabs .tabs .timetracking .icon {
+	background:url(../img/icons.png) no-repeat 0 -205px;
+}
+.task.running > .details .taskTabs .tabs .timetracking .icon {
+	background-position:0 5px;
+}
+
+
+
+/* ------------------
+	Panel
+   ------------------ */
+#timetrackingPanel {
+	position:absolute;
+	right:2px;
+	background-color:#F6F8F9;
+	padding:2px 12px 4px 12px;
+	border:1px solid #A7B6C1;
+	border-width:0 2px 1px 2px;
+}
+
+#timetrackingPanel ul li {
+	float:left;
+	margin-left:10px;
+	padding-left:10px;
+}
+
+#timetrackingPanel ul li.first {
+	margin:0;
+	padding:0;
+}

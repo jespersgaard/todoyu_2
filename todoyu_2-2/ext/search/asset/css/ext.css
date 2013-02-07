@@ -1,0 +1,112 @@
+/* ----------------------------------------------
+	Extension icon: stand-alone and in heading
+   ---------------------------------------------- */
+span.extIconSearch {
+	background:url('../img/exticon.png') no-repeat 0 0;
+}
+
+h1.extIconSearch .title {
+	background:url('../img/exticon.png') no-repeat 0 5px;
+}
+
+.areaBox {
+	background-color:#EFEFEF;
+	border-radius:5px;
+	padding:3px;
+	margin:3px 0;
+}
+
+
+
+/* --------------------------
+	Filter controls
+   -------------------------- */
+#filter-controls .headerLine span {
+	margin:2px 0 0 5px;
+}
+#filter-controls .conditions option {
+	border-bottom:1px solid #ddd;
+	color:#333;
+}
+#filter-controls option.default {
+	padding:0;
+}
+#filter-controls optgroup {
+	font-weight:bold;
+}
+#filter-controls optgroup option {
+	padding-left:10px;
+}
+#filter-controls span.sorting {
+	float:right;
+}
+#filter-controls span.sorting select {
+	max-width:250px;
+	min-width:200px;
+}
+
+
+/* --------------------------------
+	Sorting Flags
+	------------------------------- */
+#sorting-flags {
+
+}
+#sorting-flags .sort {
+	background:url(../../../../core/asset/img/bg-button-css3.png) repeat-x 0 50% #fff;
+	border:1px solid #bbb;
+	border-radius:5px;
+	float:left;
+	padding:2px 3px;
+	margin:2px 2px;
+}
+#sorting-flags .sort span {
+	float:left;
+}
+#sorting-flags .sort span.action {
+	height:14px;
+	width:12px;
+	margin-left:4px;
+	cursor:pointer;
+}
+#sorting-flags .sort .label {
+	margin-right:2px;
+	padding-left:2px;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-o-user-select:none;
+	user-select:none;
+	cursor:pointer;
+	
+}
+#sorting-flags .sort .dir {
+	background:url(../img/icons.png) no-repeat 2px -355px;
+}
+#sorting-flags .sort .dir.desc {
+	background-position:2px -385px;
+}
+#sorting-flags .sort .remove {
+	background:url(../../../../core/asset/img/icons.png) no-repeat 1px -1757px;
+}
+
+/* --------------------------------
+	Search Action Panel
+	------------------------------- */
+#action-panel {
+	margin-top:0;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-top-left-radius:0;
+	border-top-right-radius:0;
+	/*padding:10px 5px;*/
+	/*margin:10px 0;*/
+	/*background-color:#eee;*/
+}
+
+/* --------------------------------
+	Search Results
+	------------------------------- */
+#search-results .results {
+	font-weight:bold;
+}
